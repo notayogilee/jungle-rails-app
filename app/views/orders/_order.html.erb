@@ -1,0 +1,12 @@
+<% @items.each do |item|%>
+
+<tr>
+
+  <td><%= item.product.name %><%= image_tag item.product.image.tiny %></td>
+  <td><%= item.product.description %></td>
+  <td><%=  number_to_currency(item.item_price_cents/100.00) %></td>
+  <td><%=  item.quantity %></td>
+  <td><%= number_to_currency(item.item_price_cents/100.00 * item.quantity) %></td>
+
+</tr>
+  <% end %>
