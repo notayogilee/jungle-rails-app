@@ -30,7 +30,7 @@
         </li>
         <% if current_user %>
         <li>
-          <dt class="text-primary">Signed in as <%= current_user.name %></dt>
+          <dt class="text-primary">Signed in as <%= current_user.first_name %></dt>
           <dt class="text-primary"><%= link_to "Logout", '/logout' %></dt>
         </li>
         <% else %>
