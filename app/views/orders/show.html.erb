@@ -27,7 +27,11 @@
             EMAIL:
           </th>
           <th>
-            <%= @order.email %>
+          <% if current_user %>
+            <%= current_user.email %>
+          <% else %>
+              guest@email.com
+          <% end %>
           </th>
         </tr>
         <tr>
