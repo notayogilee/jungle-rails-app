@@ -22,7 +22,7 @@ RSpec.feature "ProductDetails", type: :feature, js: true do
 
     expect(page).to have_selector 'article.product'
 
-    first('a.btn.btn-default').click
+    first('.btn.btn-default').click
 
     expect(page).to have_css 'article.product-detail', count: 1
 
